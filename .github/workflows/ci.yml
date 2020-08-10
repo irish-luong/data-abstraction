@@ -17,6 +17,6 @@ jobs:
         username: ${{ secrets.REMOTE_USER }}
         script: |
           pwd
-          cd ${{ secret.REMOTE_TARGET }}
+          cd ${{ secrets.REMOTE_TARGET }}
           git pull
           ls -alh
