@@ -16,5 +16,7 @@ jobs:
         port: ${{ secrets.PORT }}
         username: ${{ secrets.REMOTE_USER }}
         script: |
-          whoami
-          ls -al
+          pwd
+          cd ${{ secret.REMOTE_TARGET }}
+          git pull
+          ls -alh
